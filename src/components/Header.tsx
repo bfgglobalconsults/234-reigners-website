@@ -6,10 +6,10 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const navLinks = [
-  { href: '/#services', label: 'Services', hash: '#services' },
+  { href: '/services', label: 'Services', page: '/services' },
   { href: '/#approach', label: 'Exhibitions', hash: '#approach' },
-  { href: '/#about', label: 'About', hash: '#about' },
-  { href: '/#contact', label: 'Contact', hash: '#contact' },
+  { href: '/about', label: 'About', page: '/about' },
+  { href: '/contact', label: 'Contact', page: '/contact' },
 ]
 
 export default function Header() {
@@ -27,8 +27,11 @@ export default function Header() {
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
 
-  const isActive = (hash: string) => {
-    return activeHash === hash || (pathname === '/' && hash === activeHash)
+  const isActive = (link: (typeof navLinks)[0]) => {
+    if (link.page) {
+      return pathname === link.page
+    }
+    return activeHash === link.hash || (pathname === '/' && link.hash === activeHash)
   }
 
   return (
@@ -43,7 +46,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={`transition font-medium ${
-                isActive(link.hash) ? 'text-gold' : 'text-gray-600 hover:text-gold'
+                isActive(link) ? 'text-gold' : 'text-gray-600 hover:text-gold'
               }`}
             >
               {link.label}

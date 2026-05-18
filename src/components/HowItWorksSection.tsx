@@ -101,10 +101,12 @@ export default function HowItWorksSection() {
           <h2 className="text-4xl md:text-5xl font-serif text-gold mb-6">
             platform to the moment.
           </h2>
-          <p className="text-white max-w-2xl mx-auto text-sm">
+          <div className="flex justify-center">
+          <p className="text-white max-w-2xl mx-auto text-sm text-center">
             Everything happens through the 234Reigners mobile app. From discovering events that
             inspire, straight down to connecting with your community after.
           </p>
+          </div>
         </div>
 
         {/* Steps */}
