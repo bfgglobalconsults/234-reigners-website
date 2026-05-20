@@ -12,7 +12,7 @@ export default function ContactHeroSection() {
           priority
         />
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
+      <div className="relative z-10 max-w-7xl ml-10 px-6 text-white">
         <div className="max-w-3xl">
           <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
             WE'D LOVE TO HEAR FROM YOU
