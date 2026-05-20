@@ -28,8 +28,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ['Georgia', 'serif'],
-        sans: ['system-ui', 'sans-serif'],
+        serif: ['var(--font-nuosu-sil)', 'Nuosu SIL', 'Georgia', 'serif'],
+        sans: ['var(--font-nunito-sans)', 'system-ui', 'sans-serif'],
       },
     },
   },

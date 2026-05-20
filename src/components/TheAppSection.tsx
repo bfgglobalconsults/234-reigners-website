@@ -131,7 +131,7 @@ export default function TheAppSection() {
                   className="h-12 w-auto"
                 />
               </a>
-              <span className="text-gray-500 text-sm font-semibold">COMING SOON.....</span>
+             
             </div>
           </div>
         </div>

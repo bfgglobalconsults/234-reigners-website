@@ -50,8 +50,8 @@ export default function AboutPage() {
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">ABOUT US</p>
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Bridging cultures</h1>
-          <h1 className="text-5xl md:text-6xl font-serif text-gold mb-8">through experience.</h1>
+          <h1 className="text-5xl md:text-6xl mb-6">Bridging cultures</h1>
+          <h1 className="text-5xl md:text-6xl text-gold mb-8">through experience.</h1>
           <p className="text-white/90 max-w-2xl text-lg leading-relaxed">
             An intercultural experience platform designed to connect people through shared cultural
             moments across the UK.
@@ -87,9 +87,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
         </div>
-        <div className="absolute inset-0 opacity-20">
-          <Image src="/assets/what-we-do-bg.jpg" alt="Background" fill className="object-cover" />
-        </div>
+       
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden">
