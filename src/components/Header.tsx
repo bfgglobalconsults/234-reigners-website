@@ -14,19 +14,7 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname()
-  const [activeHash, setActiveHash] = useState('')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      setActiveHash(window.location.hash)
-    }
-
-    setActiveHash(window.location.hash)
-    window.addEventListener('hashchange', handleHashChange)
-
-    return () => window.removeEventListener('hashchange', handleHashChange)
-  }, [])
 
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -37,10 +25,7 @@ export default function Header() {
   }, [mobileMenuOpen])
 
   const isActive = (link: (typeof navLinks)[0]) => {
-    if (link.page) {
-      return pathname === link.page
-    }
-    return activeHash === link.hash || (pathname === '/' && link.hash === activeHash)
+    return pathname === link.page
   }
 
   const handleLinkClick = () => {
