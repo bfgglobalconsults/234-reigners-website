@@ -13,13 +13,13 @@ export default function HeroSection() {
         />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-white text-center w-full">
-        <h1 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
+        <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
           Connecting
           <span className="text-gold"> Cultures</span>
-        </h1>
-        <h1 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
+        </h2>
+        <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
           Across The UK.
-        </h1>
+        </h2>
         <div className="flex justify-center">
           <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto my-8 sm:my-20 px-4">
             234Reigners is a technology-enabled intercultural experience platform that connects
@@ -52,15 +52,15 @@ export default function HeroSection() {
         {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4">
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-bold text-white mb-2">200+</div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">200+</h2>
             <div className="text-xs sm:text-sm text-gray-300 tracking-wider">EVENTS YEARLY</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-bold text-white mb-2">5k+</div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">5k+</h2>
             <div className="text-xs sm:text-sm text-gray-300 tracking-wider">COMMUNITY MEMBERS</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-bold text-white mb-2">40+</div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">40+</h2>
             <div className="text-xs sm:text-sm text-gray-300 tracking-wider">
               CULTURES CELEBRATED
             </div>

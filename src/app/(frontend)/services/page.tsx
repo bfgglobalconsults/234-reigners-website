@@ -147,7 +147,7 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative">
+      <section className="pt-32 pb-20 bg-[#1A1A1AE5] text-white relative">
         <div className="absolute inset-0 opacity-30">
           <Image
             src="/assets/services-hero-bg.jpg"
@@ -160,8 +160,8 @@ export default function ServicesPage() {
           <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
             OUR SERVICES
           </p>
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">Services built for</h1>
-          <h1 className="text-5xl md:text-6xl font-serif text-gold mb-8">cultural impact.</h1>
+          <h2 className="text-5xl md:text-6xl font-serif mb-6">Services built for</h2>
+          <h2 className="text-5xl md:text-6xl font-serif text-gold mb-8">cultural impact.</h2>
           <p className="text-white/90 max-w-2xl text-lg leading-relaxed">
             We create experiences that bring culture to life - from intimate workshops to
             large-scale events. Every service is designed to connect, educate, and inspire.
@@ -184,7 +184,7 @@ export default function ServicesPage() {
                 <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
               </svg>
             </div>
-            <div className="text-4xl font-bold text-white mb-2">4</div>
+            <div className="text-4xl font-serif text-white mb-2">4</div>
             <div className="text-sm text-white">Core Service Pillars</div>
           </div>
           <div className="text-center">
@@ -199,7 +199,7 @@ export default function ServicesPage() {
                 <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z"></path>
               </svg>
             </div>
-            <div className="text-4xl font-bold text-white mb-2">200+</div>
+            <div className="text-4xl font-serif text-white mb-2">200+</div>
             <div className="text-sm text-white">Experiences Produced</div>
           </div>
           <div className="text-center">
@@ -214,7 +214,7 @@ export default function ServicesPage() {
                 <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"></path>
               </svg>
             </div>
-            <div className="text-4xl font-bold text-white mb-2">15+</div>
+            <div className="text-4xl font-serif text-white mb-2">15+</div>
             <div className="text-sm text-white">UK Cities Covered</div>
           </div>
           <div className="text-center">
@@ -229,7 +229,7 @@ export default function ServicesPage() {
                 <path d="M6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455ZM4 18.3851L5.76282 17H20V5H4V18.3851ZM11 13H13V15H11V13ZM11 7H13V12H11V7Z"></path>
               </svg>
             </div>
-            <div className="text-4xl font-bold text-white mb-2">8K+</div>
+            <div className="text-4xl font-serif text-white mb-2">8K+</div>
             <div className="text-sm text-white">People Reached</div>
           </div>
         </div>
@@ -253,10 +253,10 @@ export default function ServicesPage() {
             <h2 className="text-4xl md:text-5xl text-black font-serif mb-4">Four ways we bring</h2>
             <h2 className="text-4xl md:text-5xl font-serif text-gold mb-6">culture to life.</h2>
             <div className="flex justify-center">
-            <p className="text-gray-600 max-w-2xl mx-auto text-center">
-              Each service is thoughtfully designed to create meaningful cultural experiences that
-              educate, inspire, and bring communities together.
-            </p>
+              <p className="text-gray-600 max-w-2xl mx-auto text-center">
+                Each service is thoughtfully designed to create meaningful cultural experiences that
+                educate, inspire, and bring communities together.
+              </p>
             </div>
           </div>
         </div>
@@ -354,10 +354,10 @@ export default function ServicesPage() {
             </p>
             <h2 className="text-4xl text-black font-serif mb-4">How to work with us</h2>
             <div className="flex justify-center">
-            <p className="text-gray-600 max-w-2xl mx-auto text-center">
-              Getting started is simple. Choose the service that fits your needs and we'll guide you
-              through the rest.
-            </p>
+              <p className="text-gray-600 max-w-2xl mx-auto text-center">
+                Getting started is simple. Choose the service that fits your needs and we'll guide
+                you through the rest.
+              </p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

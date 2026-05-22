@@ -39,19 +39,19 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative">
-        <div className="absolute inset-0 opacity-30">
+      <section className="pt-32 pb-20 bg-[#1a1a1a] text-white relative">
+        <div className="absolute inset-0 ">
           <Image
-            src="/assets/reigner-comingsoon-banner.png"
+            src="/assets/reigner-comingsoon-banner.jpg"
             alt="Background"
             fill
-            className="object-cover"
+            className="object-cover  brightness-[0.4]"
           />
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">ABOUT US</p>
-          <h1 className="text-5xl md:text-6xl mb-6">Bridging cultures</h1>
-          <h1 className="text-5xl md:text-6xl text-gold mb-8">through experience.</h1>
+          <h2 className="text-5xl md:text-6xl mb-6">Bridging cultures</h2>
+          <h2 className="text-5xl md:text-6xl text-gold mb-8">through experience.</h2>
           <p className="text-white/90 max-w-2xl text-lg leading-relaxed">
             An intercultural experience platform designed to connect people through shared cultural
             moments across the UK.
@@ -63,19 +63,19 @@ export default function AboutPage() {
       <section className="py-16 bg-[#D0982A]">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">200+</div>
+            <div className="text-4xl font-serif text-white mb-2">200+</div>
             <div className="text-sm text-white">EXPERIENCES HOSTED</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">5k+</div>
+            <div className="text-4xl font-serif text-white mb-2">5k+</div>
             <div className="text-sm text-white">COMMUNITY MEMBERS</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">40+</div>
+            <div className="text-4xl font-serif text-white mb-2">40+</div>
             <div className="text-sm text-white">UK CITIES</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">40+</div>
+            <div className="text-4xl font-serif text-white mb-2">40+</div>
             <div className="text-sm text-white">CORE FOUNDERS</div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
         </div>
-       
+
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden">

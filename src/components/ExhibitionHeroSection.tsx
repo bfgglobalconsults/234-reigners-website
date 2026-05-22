@@ -18,9 +18,9 @@ export default function ExhibitionHeroSection() {
             EXHIBITIONS
           </p>
           <p className="text-sm sm:text-base text-gray-300 mb-6">Home / Exhibitions</p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight">
             African Culture
-          </h1>
+          </h2>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl">
             African culture is a rich and diverse tapestry of traditions, languages, and customs
             that have evolved over thousands of years. It encompasses a wide range of artistic

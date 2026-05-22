@@ -129,11 +129,14 @@ export default function CultureToLifeSection() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-base sm:text-lg text-[#F47F2F] font-semibold mb-2">
+                <h4 className="text-base sm:text-lg text-[#F47F2F] font-semibold mb-1">
                   Cultural Experiences
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Where Culture Becomes A Living Moment. Immersive events spanning music, food, storytelling, and creative showcases.
+                  Where Culture Becomes A Living Moment.
+                </p>
+                <p className="text-gray-600 text-xs sm:text-sm">
+                  Immersive events spanning music, food, storytelling, and creative showcases.
                 </p>
               </div>
             </div>
@@ -152,11 +155,14 @@ export default function CultureToLifeSection() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-base sm:text-lg text-[#E45F6D] font-semibold mb-2">
+                <h4 className="text-base sm:text-lg text-[#E45F6D] font-semibold mb-1">
                   Community Engagement
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Where Strangers Become Part of Something. Spaces that foster real connection, belonging, and shared cultural interactions.
+                  Where Strangers Become Part of Something.
+                </p>
+                <p className="text-gray-600 text-xs sm:text-sm">
+                  Spaces that foster real connection, belonging, and shared cultural interactions.
                 </p>
               </div>
             </div>
@@ -179,11 +185,13 @@ export default function CultureToLifeSection() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-base sm:text-lg text-[#D0982A] font-semibold mb-2">
+                <h4 className="text-base sm:text-lg text-[#D0982A] font-semibold mb-1">
                   Physical Hubs
                 </h4>
+                <p className="text-gray-600 text-xs sm:text-sm">Where Events Find Their Home.</p>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Where Events find their home. Real-world venues and environments. From intimate pop-ups to largescale cultural festivals.
+                  Real-world venues and environments. From intimate pop-ups to largescale cultural
+                  festivals.
                 </p>
               </div>
             </div>
@@ -202,11 +210,15 @@ export default function CultureToLifeSection() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-base sm:text-lg text-[#58BD62] font-semibold mb-2">
+                <h4 className="text-base sm:text-lg text-[#58BD62] font-semibold mb-1">
                   Digital Platform
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Where discovery happens first. The mobile app that connects everything digitally - discover events, reserve spots and stay plugged into culture across cities. 
+                  Where Discovery Happens First.
+                </p>
+                <p className="text-gray-600 text-xs sm:text-sm">
+                  The mobile app that connects everything digitally -
+                  discover events, reserve spots and stay plugged into culture across cities.
                 </p>
               </div>
             </div>
