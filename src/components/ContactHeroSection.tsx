@@ -17,12 +17,12 @@ export default function ContactHeroSection() {
           <p className="text-gold text-xs sm:text-sm font-semibold tracking-wider uppercase mb-4">
             WE'D LOVE TO HEAR FROM YOU
           </p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-4 sm:mb-6 leading-tight">
             Let's make something
-          </h1>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gold mb-4 sm:mb-6 leading-tight">
+          </h2>
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gold mb-4 sm:mb-6 leading-tight">
             happen
-          </h1>
+          </h2>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
             Whether you want to host an event, partner with us, or simply say hello - we'd love to
             hear from you. Every great experience starts with a conversation.
