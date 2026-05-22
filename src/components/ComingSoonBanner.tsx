@@ -19,7 +19,7 @@ export default function ComingSoonBanner() {
         ></div>
       </div>
       <div className="relative z-10 text-center px-6">
-        <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">COMING SOON</p>
+        {/* <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">COMING SOON</p> */}
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 max-w-4xl mx-auto">
           Download the app and your next great experience awaits
         </h2>

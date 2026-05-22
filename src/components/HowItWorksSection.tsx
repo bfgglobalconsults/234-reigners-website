@@ -87,54 +87,58 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section id="approach" className="py-20 bg-[#1A1A1A] text-white relative">
+    <section id="approach" className="py-12 sm:py-20 bg-[#1A1A1A] text-white relative">
       <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
       </div>
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-20">
-          <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
+        <div className="text-center mb-12 sm:mb-20">
+          <p className="text-gold text-xs sm:text-sm font-semibold tracking-wider uppercase mb-4">
             Our Platform
           </p>
-          <h2 className="text-4xl md:text-5xl font-serif mb-2">Four steps from our</h2>
-          <h2 className="text-4xl md:text-5xl font-serif text-gold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-2">Four steps from our</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gold mb-6">
             platform to the moment.
           </h2>
-          <div className="flex justify-center">
-          <p className="text-white max-w-2xl mx-auto text-sm text-center">
-            Everything happens through the 234Reigners mobile app. From discovering events that
-            inspire, straight down to connecting with your community after.
-          </p>
+          <div className="flex justify-center px-4">
+            <p className="text-white max-w-2xl mx-auto text-sm sm:text-base text-center">
+              Everything happens through the 234Reigners mobile app. From discovering events that
+              inspire, straight down to connecting with your community after.
+            </p>
           </div>
         </div>
 
         {/* Steps */}
-        <div className="space-y-20">
+        <div className="space-y-12 sm:space-y-20">
           {steps.map((item, i) => (
             <div
               key={i}
-              className={`flex flex-col md:flex-row gap-8 items-center ${
+              className={`flex flex-col md:flex-row gap-6 sm:gap-8 items-center ${
                 item.position === 'right' ? 'md:flex-row-reverse' : ''
               }`}
             >
               {/* Image Side */}
-              <div className="flex-1">
+              <div className="flex-1 w-full">
                 <div className="relative rounded-2xl overflow-hidden">
-                  <div className="relative h-[400px]">
+                  <div className="relative h-64 sm:h-80 md:h-[400px]">
                     <Image src={item.img} alt={item.title} fill className="object-cover" />
                   </div>
                   <div
-                    className={`absolute top-6 left-6 ${item.badgeColor} text-white w-14 h-14 rounded-2xl flex items-center justify-center font-bold text-xl`}
+                    className={`absolute top-4 left-4 sm:top-6 sm:left-6 ${item.badgeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center font-bold text-lg sm:text-xl`}
                   >
                     {item.step}
                   </div>
-                  <div className="absolute bottom-6 left-6 right-6">
+                  <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6">
                     <button
-                      className={`${item.ctaColor} text-white px-6 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition inline-flex items-center gap-2`}
+                      className={`${item.ctaColor} text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold hover:opacity-90 transition inline-flex items-center gap-2`}
                     >
                       {item.cta}
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <svg
+                        className="w-3 h-3 sm:w-4 sm:h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
                         <path
                           fillRule="evenodd"
                           d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -147,16 +151,18 @@ export default function HowItWorksSection() {
               </div>
 
               {/* Text Side */}
-              <div className="flex-1">
+              <div className="flex-1 w-full">
                 <div className="inline-flex items-center gap-2 bg-[#F47F2F1A] px-3 py-2 rounded-2xl mb-4">
                   {item.icon}
                   <span className="text-white text-xs font-semibold tracking-wider uppercase">
                     {item.stepLabel}
                   </span>
                 </div>
-                <h3 className="text-3xl md:text-4xl font-serif mb-2">{item.title}</h3>
-                <h3 className="text-3xl md:text-4xl font-serif mb-6">{item.subtitle}</h3>
-                <p className="text-white mb-6">{item.desc}</p>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-2">{item.title}</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 sm:mb-6">
+                  {item.subtitle}
+                </h3>
+                <p className="text-white text-sm sm:text-base mb-6">{item.desc}</p>
                 <div className="flex gap-2">
                   {[...Array(4)].map((_, idx) => (
                     <div

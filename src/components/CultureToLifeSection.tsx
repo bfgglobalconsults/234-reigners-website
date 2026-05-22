@@ -133,7 +133,7 @@ export default function CultureToLifeSection() {
                   Cultural Experiences
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Dictum ordo aliquet ornare dolor sem.
+                  Where Culture Becomes A Living Moment. Immersive events spanning music, food, storytelling, and creative showcases.
                 </p>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function CultureToLifeSection() {
                   Community Engagement
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Pellentesque turpis nunc.
+                  Where Strangers Become Part of Something. Spaces that foster real connection, belonging, and shared cultural interactions.
                 </p>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function CultureToLifeSection() {
                   Physical Hubs
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Feugiat sit vitae tempus.
+                  Where Events find their home. Real-world venues and environments. From intimate pop-ups to largescale cultural festivals.
                 </p>
               </div>
             </div>
@@ -206,7 +206,7 @@ export default function CultureToLifeSection() {
                   Digital Platform
                 </h4>
                 <p className="text-gray-600 text-xs sm:text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Massa imperdiet quam amet.
+                  Where discovery happens first. The mobile app that connects everything digitally - discover events, reserve spots and stay plugged into culture across cities. 
                 </p>
               </div>
             </div>
