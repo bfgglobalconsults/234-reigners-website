@@ -9,25 +9,25 @@ import CTASection from '@/components/CTASection'
 const teamMembers = [
   {
     name: 'Peter Okefe',
-    role: 'Co-Founder and Chief Executive Officer (CEO)',
+    role: 'Co-Founder & Chief Executive Officer (CEO)',
     bio: 'Peter leads strategy and cultural development at 234Reigners, shaping the vision that connects communities through authentic cultural experiences across the UK.',
     image: '/assets/peter-okefe-ceo.jpeg',
   },
   {
     name: 'Kunle Adesuyi',
-    role: 'Co-Founder and CFO',
+    role: 'Co-Founder & CFO',
     bio: 'Kunle oversees finance and partnership operations, building the relationships and financial infrastructure that keep 234Reigners growing sustainably across UK markets.',
     image: '/assets/kunle-adesuyi-cfo.jpeg',
   },
   {
     name: 'Isaac Omale',
-    role: 'Co-Founder and COO',
+    role: 'Co-Founder & COO',
     bio: 'Isaac runs operations and systems, ensuring every event, hub, and digital touchpoint delivers a seamless experience for the community.',
     image: '/assets/isaac-omole-co-founder-director-operations.jpeg',
   },
   {
     name: 'Ebere Nnanna',
-    role: 'Co-Founder and CMO',
+    role: 'Co-Founder & CMO',
     bio: 'Ebere drives marketing and sales, crafting the voice of 234Reigners and building the brand presence that brings new communities into the fold.',
     image: '/assets/ebere-nnana-co-founder-marketing.jpeg',
   },
