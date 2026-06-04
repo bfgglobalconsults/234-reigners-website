@@ -64,14 +64,14 @@ export default function GrowWithUsSection() {
               Whether you organize events, own a space or run a cultural brand -- 234Reigners puts
               you in front of an audience that is already looking for what you offer.
             </p>
-            <button className="bg-gold hover:bg-gold-dark text-white px-8 py-3 rounded-full transition font-semibold w-fit">
+            {/* <button className="bg-gold hover:bg-gold-dark text-white px-8 py-3 rounded-full transition font-semibold w-fit">
               Partner With Us
-            </button>
+            </button> */}
           </div>
         </div>
 
         {/* Partner Logos */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-20">
+        {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-20">
           {partners.map((partner, i) => (
             <div
               key={i}
@@ -90,7 +90,7 @@ export default function GrowWithUsSection() {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Bottom Section */}
         <div className="grid md:grid-cols-2 gap-12 bg-white p-4">

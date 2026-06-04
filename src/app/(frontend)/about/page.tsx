@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import MissionCardsSection from '@/components/MissionCardsSection'
 import OurApproachSection from '@/components/OurApproachSection'
 import CTASection from '@/components/CTASection'
+import OurStorySection from '@/components/OurStorySection'
 
 const teamMembers = [
   {
@@ -80,10 +81,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Mission Section */}
+      <OurStorySection />
+      {/* Mission Section
       <section className="py-20 bg-[#FAF8F5] relative">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
         </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission Cards Section */}
       <MissionCardsSection />

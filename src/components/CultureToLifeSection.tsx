@@ -110,9 +110,8 @@ export default function CultureToLifeSection() {
           </div>
         </div>
 
-        {/* Feature Cards */}
+        {/* Feature Cards
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-          {/* Cultural Experiences */}
           <div className="bg-[#FFF4E6] border-2 border-[#FF9800] shadow-md  p-4 sm:p-6 rounded-lg">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FF9800] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -142,7 +141,6 @@ export default function CultureToLifeSection() {
             </div>
           </div>
 
-          {/* Community Engagement */}
           <div className="bg-[#FCE4EC] border-2 border-[#E57373] shadow-md  p-4 sm:p-6 rounded-lg">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#E57373] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -168,7 +166,6 @@ export default function CultureToLifeSection() {
             </div>
           </div>
 
-          {/* Physical Hubs */}
           <div className="bg-[#FFF9E6] border-2 border-[#FFB74D] shadow-md p-4 sm:p-6 rounded-lg">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FFB74D] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -197,7 +194,6 @@ export default function CultureToLifeSection() {
             </div>
           </div>
 
-          {/* Digital Platform */}
           <div className="bg-[#E8F5E9] border-2 border-[#81C784] shadow-md p-4 sm:p-6 rounded-lg">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#81C784] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -223,7 +219,7 @@ export default function CultureToLifeSection() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

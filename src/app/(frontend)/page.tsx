@@ -26,12 +26,12 @@ export default function HomePage() {
       <FeaturedExperiences />
       <HowItWorksSection />
       <ComingSoonBanner />
-      <OurStorySection />
+      {/* <OurStorySection /> */}
       <MemoriesGallery />
       <WhatWeOfferSection />
       <TheAppSection />
       <GrowWithUsSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <CTASection />
       <Footer />
     </div>
