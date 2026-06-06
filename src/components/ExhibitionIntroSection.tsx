@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function ExhibitionIntroSection() {
   return (
     <section className="relative py-16 sm:py-24 bg-cream">
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">

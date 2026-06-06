@@ -43,9 +43,9 @@ const stats = [
 export default function GrowWithUsSection() {
   return (
     <section className="py-20 bg-cream relative">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Top Section */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">

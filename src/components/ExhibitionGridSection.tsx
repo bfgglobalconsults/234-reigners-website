@@ -48,9 +48,9 @@ const exhibitions = [
 export default function ExhibitionGridSection() {
   return (
     <section className="relative py-16 sm:py-24 bg-cream">
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}

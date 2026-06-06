@@ -1,13 +1,13 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function OurApproachSection() {
   return (
     <section className="py-20 bg-cream text-black relative">
       {/* Background Image */}
 
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">

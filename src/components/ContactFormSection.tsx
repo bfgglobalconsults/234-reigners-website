@@ -34,9 +34,9 @@ export default function ContactFormSection() {
     <section className="py-20 bg-cream relative">
       {/* Background Image */}
 
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Column - Form Intro */}

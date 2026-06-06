@@ -237,14 +237,14 @@ export default function ServicesPage() {
 
       {/* Services Overview */}
       <section className="py-20 bg-cream relative">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Image
             src="/assets/what-we-do-bg.png"
             alt="Background"
             fill
             className="object-cover object-center"
           />
-        </div>
+        </div> */}
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
@@ -273,14 +273,14 @@ export default function ServicesPage() {
                   service.position === 'right' ? 'md:grid-flow-dense' : ''
                 }`}
               >
-                <div className="absolute inset-0">
+                {/* <div className="absolute inset-0">
                   <Image
                     src="/assets/what-we-do-bg.png"
                     alt="Background"
                     fill
                     className="object-cover object-center"
                   />
-                </div>
+                </div> */}
                 <div className={service.position === 'right' ? 'md:col-start-2' : ''}>
                   <div className="relative h-[400px] rounded-2xl overflow-hidden">
                     <Image src={service.image} alt={service.title} fill className="object-cover" />
@@ -339,14 +339,14 @@ export default function ServicesPage() {
 
       {/* How to Work With Us */}
       <section className="py-20 bg-cream relative">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Image
             src="/assets/what-we-do-bg.png"
             alt="Background"
             fill
             className="object-cover object-center"
           />
-        </div>
+        </div> */}
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">

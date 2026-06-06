@@ -84,9 +84,9 @@ export default function AboutPage() {
       <OurStorySection />
       {/* Mission Section
       <section className="py-20 bg-[#FAF8F5] relative">
-        <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0">
           <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
-        </div>
+        </div> */}
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -133,9 +133,9 @@ export default function AboutPage() {
 
       {/* Core Values */}
       <section className="py-20 bg-cream relative">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-        </div>
+        </div> */}
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
@@ -226,9 +226,9 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="py-20 bg-cream relative">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-        </div>
+        </div> */}
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">

@@ -4,10 +4,10 @@ export default function MissionCardsSection() {
   return (
     <section className="py-20 bg-cream relative">
       {/* Background Image */}
-            
-              <div className="absolute inset-0">
+
+      {/* <div className="absolute inset-0">
                 <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-              </div>
+              </div> */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Our Mission - Gold Card */}

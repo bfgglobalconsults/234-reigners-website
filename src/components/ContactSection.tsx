@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-cream relative">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 relative z-10">
         <div>
           <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">

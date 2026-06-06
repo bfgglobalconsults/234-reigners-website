@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function ContactInfoSection() {
   const contactMethods = [
@@ -70,11 +70,11 @@ export default function ContactInfoSection() {
 
   return (
     <section className="py-16 bg-cream relative">
-        {/* Background Image */}
-      
-            <div className="absolute inset-0">
+      {/* Background Image */}
+
+      {/* <div className="absolute inset-0">
               <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-            </div>
+            </div> */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {contactMethods.map((method, index) => (
@@ -90,7 +90,6 @@ export default function ContactInfoSection() {
               </h3>
               <p className="text-lg font-semibold text-black mb-2">{method.value}</p>
               <p className="text-sm text-black/60">{method.description}</p>
-              
             </div>
           ))}
         </div>

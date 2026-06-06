@@ -61,9 +61,9 @@ export default function FeaturedExperiences() {
   return (
     <section className="relative py-20 bg-[#FAF8F5]">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Image src="/assets/what-we-do-bg.png" alt="" fill className="object-cover" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}

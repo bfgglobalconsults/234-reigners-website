@@ -88,9 +88,9 @@ const steps = [
 export default function HowItWorksSection() {
   return (
     <section id="approach" className="py-12 sm:py-20 bg-[#1A1A1A] text-white relative">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-20">

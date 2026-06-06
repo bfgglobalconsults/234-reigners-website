@@ -61,9 +61,9 @@ const features = [
 export default function TheAppSection() {
   return (
     <section className="py-20 bg-cream relative overflow-hidden">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-      </div>
+      </div> */}
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-2 items-center">
           {/* Left Side - Phone Image */}
@@ -131,7 +131,6 @@ export default function TheAppSection() {
                   className="h-12 w-auto"
                 />
               </a>
-             
             </div>
           </div>
         </div>
