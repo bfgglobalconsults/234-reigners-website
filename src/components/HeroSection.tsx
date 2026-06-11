@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 export default function HeroSection() {
   return (
@@ -13,41 +16,47 @@ export default function HeroSection() {
         />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-white text-center w-full">
-        <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
-          Connecting
-          <span className="text-gold"> Cultures</span>
-        </h2>
-        <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
-          Across The UK.
-        </h2>
-        <div className="flex justify-center">
-          <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto my-8 sm:my-20 px-4">
-            234Reigners is a technology-enabled intercultural experience platform that connects
-            people through curated cultural events, food, music and community-driven experiences.
-            Our platform allows you to discover, book and engage with cultural experiences across
-            cities, both digitally and through our physical experience hubs.
-          </p>
-        </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 mb-12 sm:mb-16">
-          <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
-            <Image
-              src="/assets/reigners-googleplay.png"
-              alt="Get it on Google Play"
-              width={160}
-              height={48}
-              className="mx-auto"
-            />
-          </a>
-          <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
-            <Image
-              src="/assets/reigners-appstore.png"
-              alt="Download on the App Store"
-              width={160}
-              height={48}
-              className="mx-auto"
-            />
-          </a>
-        </div>
+        <ScrollAnimationWrapper animation="fadeInLeft">
+          <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
+            Connecting
+            <span className="text-gold"> Cultures</span>
+          </h2>
+          <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
+            Across The UK.
+          </h2>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animation="fadeInRight" delay={200}>
+          <div className="flex justify-center">
+            <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto my-8 sm:my-20 px-4">
+              234Reigners is a technology-enabled intercultural experience platform that connects
+              people through curated cultural events, food, music and community-driven experiences.
+              Our platform allows you to discover, book and engage with cultural experiences across
+              cities, both digitally and through our physical experience hubs.
+            </p>
+          </div>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper animation="bounceIn" delay={400}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 mb-12 sm:mb-16">
+            <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
+              <Image
+                src="/assets/reigners-googleplay.png"
+                alt="Get it on Google Play"
+                width={160}
+                height={48}
+                className="mx-auto"
+              />
+            </a>
+            <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
+              <Image
+                src="/assets/reigners-appstore.png"
+                alt="Download on the App Store"
+                width={160}
+                height={48}
+                className="mx-auto"
+              />
+            </a>
+          </div>
+        </ScrollAnimationWrapper>
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4">
