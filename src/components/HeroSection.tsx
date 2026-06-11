@@ -35,7 +35,7 @@ export default function HeroSection() {
             </p>
           </div>
         </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper animation="bounceIn" delay={400}>
+        <ScrollAnimationWrapper animation="fadeIn" delay={400}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 mb-12 sm:mb-16">
             <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
               <Image
