@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 export default function ContactCTASection() {
   return (
@@ -18,19 +21,23 @@ export default function ContactCTASection() {
           }}
         ></div>
       </div>
-      <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-        <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
-          PREFER TO TALK?
-        </p>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6">Book a discovery call</h2>
-        <p className="text-white/90 leading-relaxed max-w-2xl mx-auto mb-8 text-lg">
-          Sometimes a 15-minute call is faster than email. Pick a time that works for you and we
-          will walk you through everything.
-        </p>
-        <button className="bg-gold hover:bg-gold-dark text-white px-4 py-2 rounded-full transition font-semibold text-sm">
-          Book a Call
-        </button>
-      </div>
+      <ScrollAnimationWrapper animation="fadeIn">
+        <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+          <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
+            PREFER TO TALK?
+          </p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6">
+            Book a discovery call
+          </h2>
+          <p className="text-white/90 leading-relaxed max-w-2xl mx-auto mb-8 text-lg">
+            Sometimes a 15-minute call is faster than email. Pick a time that works for you and we
+            will walk you through everything.
+          </p>
+          <button className="bg-gold hover:bg-gold-dark text-white px-4 py-2 rounded-full transition font-semibold text-sm">
+            Book a Call
+          </button>
+        </div>
+      </ScrollAnimationWrapper>
     </section>
   )
 }

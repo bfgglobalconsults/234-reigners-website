@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 export default function ComingSoonBanner() {
   return (
@@ -18,18 +21,20 @@ export default function ComingSoonBanner() {
           }}
         ></div>
       </div>
-      <div className="relative z-10 text-center px-6">
-        {/* <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">COMING SOON</p> */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 max-w-4xl mx-auto">
-          Download the app and your next great experience awaits
-        </h2>
-        <button className="bg-gold text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition inline-flex items-center gap-2">
-          Get the App
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-          </svg>
-        </button>
-      </div>
+      <ScrollAnimationWrapper animation="fadeIn">
+        <div className="relative z-10 text-center px-6">
+          {/* <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">COMING SOON</p> */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 max-w-4xl mx-auto">
+            Download the app and your next great experience awaits
+          </h2>
+          <button className="bg-gold text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition inline-flex items-center gap-2">
+            Get the App
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+            </svg>
+          </button>
+        </div>
+      </ScrollAnimationWrapper>
     </section>
   )
 }

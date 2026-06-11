@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ExhibitionCTASection() {
   return (
@@ -25,12 +26,18 @@ export default function ExhibitionCTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full transition font-semibold text-base w-full sm:w-auto">
+          <Link
+            href="/contact"
+            className="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full transition font-semibold text-base w-full sm:w-auto text-center"
+          >
             Book Your Visit
-          </button>
-          <button className="bg-transparent border-2 border-white hover:bg-white hover:text-forest text-white px-8 py-4 rounded-full transition font-semibold text-base w-full sm:w-auto">
+          </Link>
+          <a
+            href="#schedule"
+            className="bg-transparent border-2 border-white hover:bg-white hover:text-forest text-white px-8 py-4 rounded-full transition font-semibold text-base w-full sm:w-auto text-center"
+          >
             View Schedule
-          </button>
+          </a>
         </div>
       </div>
     </section>
