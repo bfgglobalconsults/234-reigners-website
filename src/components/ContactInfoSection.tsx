@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 export default function ContactInfoSection() {
   const contactMethods = [
@@ -78,19 +81,18 @@ export default function ContactInfoSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {contactMethods.map((method, index) => (
-            <div
-              key={index}
-              className="bg-[#D0982A33] p-8 rounded-2xl border border-gold/20 hover:border-gold/40 transition-all hover:shadow-lg"
-            >
-              <div className="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
-                {method.icon}
+            <ScrollAnimationWrapper key={index} animation="fadeInUp" delay={index * 100}>
+              <div className="bg-[#D0982A33] p-8 rounded-2xl border border-gold/20 hover:border-gold/40 transition-all hover:shadow-lg">
+                <div className="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
+                  {method.icon}
+                </div>
+                <h3 className="text-xs font-semibold text-gold uppercase tracking-wider mb-3">
+                  {method.title}
+                </h3>
+                <p className="text-lg font-semibold text-black mb-2">{method.value}</p>
+                <p className="text-sm text-black/60">{method.description}</p>
               </div>
-              <h3 className="text-xs font-semibold text-gold uppercase tracking-wider mb-3">
-                {method.title}
-              </h3>
-              <p className="text-lg font-semibold text-black mb-2">{method.value}</p>
-              <p className="text-sm text-black/60">{method.description}</p>
-            </div>
+            </ScrollAnimationWrapper>
           ))}
         </div>
       </div>

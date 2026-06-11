@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 export default function ContactHeroSection() {
   return (
@@ -13,21 +16,23 @@ export default function ContactHeroSection() {
         />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:ml-10 text-white">
-        <div className="max-w-3xl">
-          <p className="text-gold text-xs sm:text-sm font-semibold tracking-wider uppercase mb-4">
-            WE'D LOVE TO HEAR FROM YOU
-          </p>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-4 sm:mb-6 leading-tight">
-            Let's make something
-          </h2>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gold mb-4 sm:mb-6 leading-tight">
-            happen
-          </h2>
-          <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-            Whether you want to host an event, partner with us, or simply say hello - we'd love to
-            hear from you. Every great experience starts with a conversation.
-          </p>
-        </div>
+        <ScrollAnimationWrapper animation="fadeIn">
+          <div className="max-w-3xl">
+            <p className="text-gold text-xs sm:text-sm font-semibold tracking-wider uppercase mb-4">
+              WE'D LOVE TO HEAR FROM YOU
+            </p>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif mb-4 sm:mb-6 leading-tight">
+              Let's make something
+            </h2>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif text-gold mb-4 sm:mb-6 leading-tight">
+              happen
+            </h2>
+            <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+              Whether you want to host an event, partner with us, or simply say hello - we'd love to
+              hear from you. Every great experience starts with a conversation.
+            </p>
+          </div>
+        </ScrollAnimationWrapper>
       </div>
     </section>
   )
