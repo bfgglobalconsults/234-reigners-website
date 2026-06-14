@@ -27,8 +27,8 @@ export default function HomePage() {
       <HowItWorksSection />
       <ComingSoonBanner />
       {/* <OurStorySection /> */}
-      <MemoriesGallery />
-      <WhatWeOfferSection />
+      {/* <MemoriesGallery /> */}
+      {/* <WhatWeOfferSection /> */}
       <TheAppSection />
       <GrowWithUsSection />
       {/* <ContactSection /> */}
