@@ -226,10 +226,8 @@ export default function AboutPage() {
       <OurApproachSection />
 
       {/* Team Section */}
-      <section className="py-20 bg-cream relative">
-        {/* <div className="absolute inset-0">
-          <Image src="/assets/what-we-do-bg.png" alt="Background" fill className="object-cover" />
-        </div> */}
+      {/* <section className="py-20 bg-cream relative">
+      
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <p className="text-gold text-sm font-semibold tracking-wider uppercase mb-4">
@@ -264,7 +262,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <CTASection />
       <Footer />
     </div>
