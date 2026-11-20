@@ -1,0 +1,70 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="250" cy="250" r="200" fill="#FEF3E2" opacity="0.5"/>
+  
+  <!-- Person 1 - Left front with red cap -->
+  <ellipse cx="140" cy="330" rx="35" ry="45" fill="#1E3A5F"/>
+  <circle cx="140" cy="290" r="25" fill="#F4A460"/>
+  <path d="M 125 275 Q 140 265 155 275" fill="#DC143C"/>
+  <ellipse cx="135" cy="292" rx="2" ry="3" fill="#000"/>
+  <ellipse cx="145" cy="292" rx="2" ry="3" fill="#000"/>
+  <path d="M 135 300 Q 140 303 145 300" stroke="#000" stroke-width="1.5" fill="none"/>
+  <rect x="125" y="330" width="12" height="30" fill="#F4A460" rx="6"/>
+  <rect x="143" y="330" width="12" height="30" fill="#F4A460" rx="6"/>
+  
+  <!-- Person 2 - Left middle with yellow hair -->
+  <ellipse cx="100" cy="280" rx="30" ry="40" fill="#2C5F2D"/>
+  <circle cx="100" cy="245" r="22" fill="#8B4513"/>
+  <path d="M 85 230 Q 100 220 115 230" fill="#F9A825"/>
+  <ellipse cx="95" cy="247" rx="2" ry="3" fill="#000"/>
+  <ellipse cx="105" cy="247" rx="2" ry="3" fill="#000"/>
+  
+  <!-- Person 3 - Center front with blue hair -->
+  <ellipse cx="250" cy="340" rx="38" ry="48" fill="#D2691E"/>
+  <circle cx="250" cy="295" r="27" fill="#CD853F"/>
+  <path d="M 230 280 Q 250 268 270 280" fill="#4169E1"/>
+  <ellipse cx="243" cy="297" rx="2" ry="3" fill="#000"/>
+  <ellipse cx="257" cy="297" rx="2" ry="3" fill="#000"/>
+  <path d="M 243 307 Q 250 310 257 307" stroke="#000" stroke-width="1.5" fill="none"/>
+  <rect x="232" y="340" width="14" height="35" fill="#CD853F" rx="7"/>
+  <rect x="254" y="340" width="14" height="35" fill="#CD853F" rx="7"/>
+  
+  <!-- Person 4 - Right middle in red -->
+  <ellipse cx="360" cy="300" rx="32" ry="42" fill="#DC143C"/>
+  <circle cx="360" cy="260" r="23" fill="#DEB887"/>
+  <path d="M 345 245 Q 360 238 375 245" fill="#000"/>
+  <ellipse cx="355" cy="262" rx="2" ry="3" fill="#000"/>
+  <ellipse cx="365" cy="262" rx="2" ry="3" fill="#000"/>
+  <path d="M 355 270 Q 360 273 365 270" stroke="#000" stroke-width="1.5" fill="none"/>
+  
+  <!-- Person 5 - Right front in orange -->
+  <ellipse cx="310" cy="320" rx="33" ry="43" fill="#FF6347"/>
+  <circle cx="310" cy="280" r="24" fill="#2C3E50"/>
+  <path d="M 295 265 Q 310 258 325 265" fill="#8B0000"/>
+  <ellipse cx="305" cy="282" rx="2" ry="3" fill="#000"/>
+  <ellipse cx="315" cy="282" rx="2" ry="3" fill="#000"/>
+  
+  <!-- Person 6 - Back left -->
+  <ellipse cx="180" cy="250" rx="28" ry="38" fill="#4A5568"/>
+  <circle cx="180" cy="215" r="20" fill="#D2B48C"/>
+  <path d="M 168 200 Q 180 193 192 200" fill="#654321"/>
+  
+  <!-- Person 7 - Back right -->
+  <ellipse cx="320" cy="240" rx="28" ry="38" fill="#2F4F4F"/>
+  <circle cx="320" cy="205" r="20" fill="#F5DEB3"/>
+  <path d="M 308 190 Q 320 183 332 190" fill="#DC143C"/>
+  
+  <!-- Decorative elements -->
+  <!-- Left wave lines -->
+  <path d="M 40 180 Q 60 160 40 140 Q 60 120 40 100" stroke="#D0982A" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 50 200 Q 70 180 50 160" stroke="#D0982A" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Right wave lines -->
+  <path d="M 420 400 L 430 390 L 425 385 L 435 375 L 430 370" stroke="#E74C3C" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M 430 420 L 440 410 L 435 405" stroke="#E74C3C" stroke-width="3" fill="none" opacity="0.5"/>
+  
+  <!-- Bottom decorative lines -->
+  <rect x="380" y="440" width="60" height="3" fill="#4169E1" opacity="0.6"/>
+  <rect x="390" y="450" width="40" height="3" fill="#DC143C" opacity="0.6"/>
+  <rect x="400" y="460" width="30" height="3" fill="#F9A825" opacity="0.6"/>
+</svg>

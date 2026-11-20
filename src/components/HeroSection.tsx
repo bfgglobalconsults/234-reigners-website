@@ -1,79 +1,119 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-24 sm:pt-28 pb-12 sm:pb-16 mt-16 sm:mt-20 min-h-screen flex items-center">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/assets/reigners-banner.jpg"
-          alt="Hero"
-          fill
-          className="object-cover brightness-10"
-          priority
-        />
-      </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-white text-center w-full">
-        <ScrollAnimationWrapper animation="fadeInLeft">
-          <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
-            Connecting
-            <span className="text-gold"> Cultures</span>
-          </h2>
-          <h2 className="text-3xl sm:text-5xl font-serif md:text-7xl mb-4 sm:mb-6 leading-tight">
-            Across The UK.
-          </h2>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper animation="fadeInRight" delay={200}>
-          <div className="flex justify-center">
-            <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto my-8 sm:my-20 px-4">
-              234Reigners is a technology-enabled intercultural experience platform that connects
-              people through curated cultural events, food, music and community-driven experiences.
-              Our platform allows you to discover, book and engage with cultural experiences across
-              cities, both digitally and through our physical experience hubs.
-            </p>
-          </div>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper animation="fadeIn" delay={400}>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 mb-12 sm:mb-16">
-            <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
-              <Image
-                src="/assets/reigners-googleplay.png"
-                alt="Get it on Google Play"
-                width={160}
-                height={48}
-                className="mx-auto"
-              />
-            </a>
-            <a href="#" className="hover:opacity-80 transition w-full sm:w-auto">
-              <Image
-                src="/assets/reigners-appstore.png"
-                alt="Download on the App Store"
-                width={160}
-                height={48}
-                className="mx-auto"
-              />
-            </a>
-          </div>
-        </ScrollAnimationWrapper>
+    <section className="relative pt-20 pb-16 mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-12 lg:items-start">
+          {/* Left Content */}
+          <div className="space-y-6">
+            <ScrollAnimationWrapper animation="fadeIn">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 border-2 border-red-500 rounded-full">
+                <div className="w-6 h-6 flex items-center justify-center">
+                  <Image
+                    src="/assets/ribbon.svg"
+                    alt="Ribbon icon"
+                    width={20}
+                    height={20}
+                    className="text-red-500"
+                  />
+                </div>
+                <span className="text-sm font-medium text-black">
+                  Intercultural Experience To Mental Wellbeing
+                </span>
+              </div>
+            </ScrollAnimationWrapper>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto px-4">
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">200+</h2>
-            <div className="text-xs sm:text-sm text-gray-300 tracking-wider">EVENTS YEARLY</div>
+            <ScrollAnimationWrapper animation="fadeInLeft" delay={100}>
+              {/* Headline */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+                Mental wellbeing through cultural connection.
+              </h1>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper animation="fadeInLeft" delay={200}>
+              {/* Description */}
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Facing anxiety, depression or feelings of isolation can be difficult. We create
+                welcoming spaces supporting mental wellbeing through culture, creativity and
+                meaningful human connection.
+              </p>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper animation="fadeIn" delay={300}>
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Link
+                  href="/experiences"
+                  className="inline-flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full transition font-medium"
+                >
+                  Explore Experiences
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  href="/community"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-[#007835] hover:bg-[#007835] hover:text-white text-gray-900 px-6 py-3 rounded-full transition font-medium"
+                >
+                  Join Our Community
+                </Link>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper animation="fadeIn" delay={400}>
+              {/* Info Footer */}
+              <div className="flex flex-col sm:flex-row gap-6 pt-8 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    fill="rgba(227,4,37,1)"
+                  >
+                    <path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path>
+                  </svg>
+                  <span>Rooted in Brighton, reaching across the UK</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    fill="rgba(227,4,37,1)"
+                  >
+                    <path d="M11 2C15.0675 2 18.426 5.03562 18.9337 8.96494L21.1842 12.5037C21.3324 12.7367 21.3025 13.0847 20.9593 13.2317L19 14.071V17C19 18.1046 18.1046 19 17 19H15.001L15 22H6L6.00025 18.3061C6.00033 17.1252 5.56351 16.0087 4.7555 15.0011C3.65707 13.6313 3 11.8924 3 10C3 5.58172 6.58172 2 11 2ZM11 4C7.68629 4 5 6.68629 5 10C5 11.3849 5.46818 12.6929 6.31578 13.7499C7.40965 15.114 8.00036 16.6672 8.00025 18.3063L8.00013 20H13.0007L13.0017 17H17V12.7519L18.5497 12.0881L17.0072 9.66262L16.9501 9.22118C16.5665 6.25141 14.0243 4 11 4ZM10.4697 7.76256L11 8.29289L11.5303 7.76256C12.2137 7.07915 13.3218 7.07915 14.0052 7.76256C14.6886 8.44598 14.6886 9.55402 14.0052 10.2374L11 13.2426L7.9948 10.2374C7.31138 9.55402 7.31138 8.44598 7.9948 7.76256C8.67821 7.07915 9.78625 7.07915 10.4697 7.76256Z"></path>
+                  </svg>
+                  <span>Non-clinical - Complimentary to professional care</span>
+                </div>
+              </div>
+            </ScrollAnimationWrapper>
           </div>
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">5k+</h2>
-            <div className="text-xs sm:text-sm text-gray-300 tracking-wider">COMMUNITY MEMBERS</div>
-          </div>
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">40+</h2>
-            <div className="text-xs sm:text-sm text-gray-300 tracking-wider">
-              CULTURES CELEBRATED
+
+          {/* Right Image */}
+          <ScrollAnimationWrapper animation="fadeInRight" delay={200}>
+            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[500px]">
+              <Image
+                src="/assets/reigners-banner.png"
+                alt="Mental wellbeing through cultural connection"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
-          </div>
+          </ScrollAnimationWrapper>
         </div>
       </div>
     </section>

@@ -11,8 +11,7 @@
   --color-navy: #2b2d42;
   --color-navy-dark: #1a1b2e;
 
-  --font-family-serif: Georgia, serif;
-  --font-family-sans: system-ui, sans-serif;
+  --font-family-sans: var(--font-dm-sans, system-ui, sans-serif);
 }
 
 :root {
@@ -53,7 +52,7 @@ body,
 }
 
 body {
-  font-family: system-ui;
+  font-family: var(--font-dm-sans, system-ui, sans-serif);
   font-size: 18px;
   line-height: 32px;
 

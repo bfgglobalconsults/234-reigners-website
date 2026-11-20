@@ -6,10 +6,12 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const navLinks = [
-  { href: '/services', label: 'Services', page: '/services' },
-  { href: '/exhibitions', label: 'Exhibitions', page: '/exhibitions' },
-  { href: '/about', label: 'About', page: '/about' },
-  { href: '/contact', label: 'Contact', page: '/contact' },
+  { href: '/about', label: 'About Us', page: '/about' },
+  { href: '/approach', label: 'Our Approach', page: '/approach' },
+  { href: '/initiatives', label: 'Our Initiatives', page: '/initiatives' },
+  { href: '/social-impact', label: 'Social Impact', page: '/social-impact' },
+  { href: '/volunteer', label: 'Be a Volunteer', page: '/volunteer' },
+  { href: '/contact', label: 'Contacts', page: '/contact' },
 ]
 
 export default function Header() {
@@ -52,7 +54,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`transition font-medium ${
+                className={`transition font-sm ${
                   isActive(link) ? 'text-gold' : 'text-gray-600 hover:text-gold'
                 }`}
               >
@@ -62,9 +64,12 @@ export default function Header() {
           </div>
 
           {/* Desktop CTA Button */}
-          <button className="hidden lg:block bg-gold hover:bg-gold-dark text-white px-6 py-2 rounded-full transition font-medium">
-            Explore Experiences
-          </button>
+          <Link
+            href="/partner"
+            className="hidden lg:block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full transition font-medium"
+          >
+            Partner With Us
+          </Link>
 
           {/* Mobile Hamburger Button */}
           <button
@@ -150,9 +155,13 @@ export default function Header() {
 
           {/* Sidebar Footer */}
           <div className="p-6 border-t border-gray-100">
-            <button className="w-full bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-full transition font-medium">
-              Explore Experiences
-            </button>
+            <Link
+              href="/partner"
+              onClick={handleLinkClick}
+              className="block w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full transition font-medium text-center"
+            >
+              Partner With Us
+            </Link>
             <div className="flex justify-center gap-4 mt-6">
               <a href="#" className="text-gray-600 hover:text-gold transition">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
