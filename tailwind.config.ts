@@ -28,8 +28,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ['var(--font-nuosu-sil)', 'Nuosu SIL', 'Georgia', 'serif'],
-        sans: ['var(--font-nunito-sans)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         float: {

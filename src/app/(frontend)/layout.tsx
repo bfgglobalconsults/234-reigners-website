@@ -1,20 +1,12 @@
 import React from 'react'
-import { Nunito_Sans } from 'next/font/google'
-import localFont from 'next/font/local'
+import { DM_Sans } from 'next/font/google'
 import '../globals.css'
 import './styles.css'
 
-const nunitoSans = Nunito_Sans({
+const dmSans = DM_Sans({
   subsets: ['latin'],
-  variable: '--font-nunito-sans',
-  display: 'swap',
-})
-
-const nuosuSIL = localFont({
-  src: '../../fonts/NuosuSIL-Regular.ttf',
-  variable: '--font-nuosu-sil',
-  weight: '400',
-  style: 'normal',
+  variable: '--font-dm-sans',
+  weight: ['400', '500', '600', '700'],
   display: 'swap',
 })
 
@@ -28,8 +20,8 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <body className={`${nunitoSans.variable} ${nuosuSIL.variable} font-sans`}>
-        <main>{children}</main>
+      <body className={`${dmSans.variable} font-sans bg-white`}>
+        <main className="">{children}</main>
       </body>
     </html>
   )
