@@ -32,6 +32,8 @@ export default function HeroSection() {
             <ScrollAnimationWrapper animation="fadeInLeft" delay={100}>
               {/* Headline */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-bold text-gray-900">
+
+             
                 Mental wellbeing through Intercultural Experience.
               </h1>
             </ScrollAnimationWrapper>
