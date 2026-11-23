@@ -43,13 +43,13 @@ export default function MentalHealthApproachSection() {
 
           {/* Right Video Card */}
           <ScrollAnimationWrapper animation="fadeInRight">
-            <div className="relative rounded-3xl p-8 lg:p-12">
+            <div className="relative rounded-3xl p-4 sm:p-8 lg:p-12">
                           <Image
                             src="/assets/purple-bg.png"
                             alt="Diverse group of people connecting"
                             width={800}
-                            height={800}
-                            className="w-full h-auto object-cover rounded-3xl"
+                            height={1000}
+                            className="w-full h-[400px] sm:h-[500px] lg:h-auto object-cover rounded-3xl"
                             priority
                           />
                           {/* Play button overlay */}
