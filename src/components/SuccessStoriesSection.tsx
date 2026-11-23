@@ -54,7 +54,7 @@ export default function SuccessStoriesSection() {
         <ScrollAnimationWrapper animation="fadeIn">
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
-              Success <span className="text-green-600">Stories</span>
+              Discover Our Success Stories <br/> & Community <span className="text-green-600">Impact</span>
             </h2>
             <p className="text-lg text-gray-700">Real Stories. Meaningful Connections</p>
           </div>

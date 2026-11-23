@@ -71,11 +71,7 @@ export default function WhoWeAreSection() {
                   className="w-20 h-20 bg-yellow-500 hover:bg-yellow-600 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
                   aria-label="Play video"
                 >
-                  <svg
-                    className="w-8 h-8 text-white ml-1"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </button>
@@ -87,13 +83,13 @@ export default function WhoWeAreSection() {
           <ScrollAnimationWrapper animation="fadeInRight">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                Mental Health Advocacy through Intercultural Experience
+                Harnessing Culture, Advancing Mental Wellbeing.
               </h3>
               <p className="text-gray-600 leading-relaxed mb-8">
-                We advocate for mental health and cultivates holistic wellbeing by harnessing
-                food, music, art and storytelling as powerful engines for deep social connection.
-                Rooted in Brighton, our purpose reaches across the UK to create the conditions for
-                people to feel recognised, emotionally supported and connected across cultures and
+                We advocate for mental health and cultivates holistic wellbeing by harnessing food,
+                music, art and storytelling as powerful engines for deep social connection. Rooted
+                in Brighton, our purpose reaches across the UK to create the conditions for people
+                to feel recognised, emotionally supported and connected across cultures and
                 generations
               </p>
               <Link
