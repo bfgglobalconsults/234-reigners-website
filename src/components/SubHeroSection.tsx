@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 const services = [
@@ -50,6 +50,30 @@ const services = [
 
 export default function SubHeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Detect mobile viewport
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024)
+    }
+
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  // Auto-rotate on mobile - every 5 seconds
+  useEffect(() => {
+    if (!isMobile) return
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1))
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [isMobile])
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? services.length - 1 : prev - 1))
@@ -79,20 +103,14 @@ export default function SubHeroSection() {
         {/* Cards Grid - Desktop */}
         <div className="hidden lg:grid lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <ScrollAnimationWrapper
-              key={service.id}
-              animation="fadeIn"
-              delay={index * 100}
-            >
+            <ScrollAnimationWrapper key={service.id} animation="fadeIn" delay={index * 100}>
               <div className={`${service.bgColor} rounded-2xl p-6 h-[600px] flex flex-col`}>
                 {/* Card Header */}
                 <div className="mb-4">
                   <h3 className="text-lg font-bold text-gray-900 mb-3 leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
+                  <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
                 </div>
 
                 {/* Discover More Link */}
@@ -118,12 +136,7 @@ export default function SubHeroSection() {
 
                 {/* Card Image */}
                 <div className="relative -mx-6 -mb-6 flex-1 rounded-bl-2xl rounded-tr-2xl overflow-hidden mt-auto min-h-[200px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={service.image} alt={service.title} fill className="object-cover" />
                 </div>
               </div>
             </ScrollAnimationWrapper>
@@ -134,7 +147,9 @@ export default function SubHeroSection() {
         <div className="lg:hidden">
           <div className="relative">
             {/* Current Card */}
-            <div className={`${services[currentIndex].bgColor} rounded-2xl p-6 flex flex-col min-h-[500px]`}>
+            <div
+              className={`${services[currentIndex].bgColor} rounded-2xl p-6 flex flex-col min-h-[500px]`}
+            >
               {/* Card Header */}
               <div className="mb-4">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">

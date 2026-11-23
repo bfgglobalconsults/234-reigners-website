@@ -31,14 +31,14 @@ export default function HeroSection() {
 
             <ScrollAnimationWrapper animation="fadeInLeft" delay={100}>
               {/* Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-bold text-gray-900">
                 Mental wellbeing through Intercultural Experience.
               </h1>
             </ScrollAnimationWrapper>
 
             <ScrollAnimationWrapper animation="fadeInLeft" delay={200}>
               {/* Description */}
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-md md:text-lg text-gray-600 leading-relaxed">
                 Facing anxiety, depression or feelings of isolation can be difficult. We create
                 welcoming spaces supporting mental wellbeing through culture, creativity and
                 meaningful human connection.
@@ -102,15 +102,29 @@ export default function HeroSection() {
             </ScrollAnimationWrapper>
           </div>
 
-          {/* Right Image */}
+          {/* Right Video with Image Mask */}
           <ScrollAnimationWrapper animation="fadeInRight" delay={200}>
-            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[500px]">
-              <Image
-                src="/assets/reigners-banner.png"
-                alt="Mental wellbeing through cultural connection"
-                fill
-                className="object-cover"
-                priority
+            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[500px] overflow-hidden">
+              {/* Video element with mask */}
+              <video
+                src="/assets/mental-health.mp4"
+                className="absolute inset-0 w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={
+                  {
+                    maskImage: 'url(/assets/reigners-banner.png)',
+                    maskSize: 'cover',
+                    maskPosition: 'center',
+                    maskRepeat: 'no-repeat',
+                    WebkitMaskImage: 'url(/assets/reigners-banner.png)',
+                    WebkitMaskSize: 'cover',
+                    WebkitMaskPosition: 'center',
+                    WebkitMaskRepeat: 'no-repeat',
+                  } as React.CSSProperties
+                }
               />
             </div>
           </ScrollAnimationWrapper>
