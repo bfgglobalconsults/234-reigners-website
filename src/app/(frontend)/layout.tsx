@@ -7,11 +7,11 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-dm-sans',
   weight: ['400', '500', '600', '700'],
-  display: 'swap',
 })
 
 export const metadata = {
-  description: '234 Reigners is a technology-enabled intercultural experience platform that connects people through curated cultural events, food, music and community-driven experiences. Our platform allows you to discover, book and engage with cultural experiences across cities, both digitally and through our physical experience hubs.',
+  description:
+    '234 Reigners is a technology-enabled intercultural experience platform that connects people through curated cultural events, food, music and community-driven experiences. Our platform allows you to discover, book and engage with cultural experiences across cities, both digitally and through our physical experience hubs.',
   title: '234 Reigners Website',
 }
 
