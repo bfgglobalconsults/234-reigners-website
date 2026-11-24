@@ -13,6 +13,8 @@ const statistics = [
     title: 'Adult Mental Health Prevalence',
     description: '1 in 4 adults experiences a mental health problem each year.',
     source: 'Source: Mental Health & Wellbeing Survey, 2026',
+    sourceUrl:
+      'https://digital.nhs.uk/data-and-information/publications/statistical/adult-psychiatric-morbidity-survey/survey-of-mental-health-and-wellbeing-england-2023-24',
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const statistics = [
     description:
       '1 in 5 adults experiences symptoms of anxiety, depression or another common mental health disorder in a given week.',
     source: 'Source: Mental Health & Wellbeing Survey, 2026',
+    sourceUrl:
+      'https://digital.nhs.uk/data-and-information/publications/statistical/adult-psychiatric-morbidity-survey/survey-of-mental-health-and-wellbeing-england-2023-24',
   },
   {
     id: 3,
@@ -33,6 +37,8 @@ const statistics = [
     description:
       'Nearly 12% of adults report symptoms associated with severe mental illness in a given week.',
     source: 'Source: Mental Health & Wellbeing Survey, 2026',
+    sourceUrl:
+      'https://digital.nhs.uk/data-and-information/publications/statistical/adult-psychiatric-morbidity-survey/survey-of-mental-health-and-wellbeing-england-2023-24',
   },
 ]
 
@@ -125,7 +131,14 @@ export default function WhoWeAreSection() {
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-3">{stat.title}</h4>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">{stat.description}</p>
-                <p className="text-xs text-gray-500 italic">{stat.source}</p>
+                <Link
+                  href={stat.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-gray-500 italic hover:text-gray-700 hover:underline transition-colors"
+                >
+                  {stat.source}
+                </Link>
               </div>
             </ScrollAnimationWrapper>
           ))}

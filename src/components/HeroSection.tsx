@@ -113,12 +113,12 @@ export default function HeroSection() {
 
           {/* Right Hero Image */}
           <ScrollAnimationWrapper animation="fadeInRight" delay={200}>
-            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[500px] overflow-hidden group">
+            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[600px] overflow-hidden group">
               <Image
                 src="/assets/hero-new-img.png"
                 alt="234reigners Hero"
                 fill
-                className="object-contain"
+                className="object-cover"
                 priority
               />
               {/* YouTube Play Button Overlay */}
