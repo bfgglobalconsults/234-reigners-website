@@ -194,8 +194,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="text-gray-600 text-xs">© 2026 234Reigners. All rights reserved.</p>
-          <p className="text-gray-600 text-xs max-w-2xl text-left md:text-right">
-            234Reigners is a non-clinical organisation. Our work complements professional mental
+          <p className="text-gray-600 text-xs max-w-2xl text-left md:text-left">
+            234Reigners is a non-clinical organisation. Our work complements professional <br/> mental
             health care and does not replace it.
           </p>
         </div>

@@ -137,8 +137,8 @@ export default function SubHeroSection() {
       {/* header */}
       <ScrollAnimationWrapper animation="fadeIn">
         <div className="mb-12 lg:mb-16 max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
-            Stay ahead of our <span className="text-green-600">Initiatives</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-black">
+            Stay Ahead of Our <span className="text-green-600">Initiatives</span>
           </h2>
           <p className="text-lg text-gray-700">
             Explore our initiatives, designed to help you embrace the key forces of mental <br />{' '}

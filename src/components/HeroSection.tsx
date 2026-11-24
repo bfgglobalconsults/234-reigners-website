@@ -128,7 +128,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="absolute inset-0 flex items-center justify-center z-10 transition-opacity hover:opacity-90"
               >
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 transition-transform group-hover:scale-110 duration-300">
+                <div className="relative w-20 h-20  transition-transform group-hover:scale-110 duration-300">
                   {/* Red Circle Background */}
                   <div className="absolute inset-0 bg-red-600 rounded-full shadow-2xl"></div>
                   {/* White Play Triangle */}
