@@ -68,7 +68,7 @@ export default function WhoWeAreSection() {
               {/* Play button overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <button
-                  className="w-20 h-20 bg-yellow-500 hover:bg-yellow-600 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+                  className="w-20 h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
                   aria-label="Play video"
                 >
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
