@@ -53,8 +53,9 @@ export default function SuccessStoriesSection() {
         {/* Section Header */}
         <ScrollAnimationWrapper animation="fadeIn">
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl text-black font-bold mb-4">
-              Discover Our Success Stories <br/> & Community <span className="text-green-600">Impact</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-4">
+              Discover Our Success Stories <br /> & Community{' '}
+              <span className="text-green-600">Impact</span>
             </h2>
             <p className="text-lg text-gray-700">Real Stories. Meaningful Connections</p>
           </div>
@@ -64,11 +65,7 @@ export default function SuccessStoriesSection() {
         <div className="hidden lg:block">
           <div className="grid grid-cols-3 gap-6 mb-8">
             {stories.slice(currentIndex, currentIndex + 3).map((story, index) => (
-              <ScrollAnimationWrapper
-                key={story.id}
-                animation="fadeIn"
-                delay={index * 100}
-              >
+              <ScrollAnimationWrapper key={story.id} animation="fadeIn" delay={index * 100}>
                 <StoryCard story={story} />
               </ScrollAnimationWrapper>
             ))}
@@ -150,9 +147,7 @@ export default function SuccessStoriesSection() {
             </button>
 
             <button
-              onClick={() =>
-                setCurrentIndex((prev) => Math.min(stories.length - 1, prev + 1))
-              }
+              onClick={() => setCurrentIndex((prev) => Math.min(stories.length - 1, prev + 1))}
               disabled={currentIndex >= stories.length - 1}
               className="w-12 h-12 rounded-full bg-cream-dark hover:bg-yellow-100 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center transition shadow-sm"
               aria-label="Next story"

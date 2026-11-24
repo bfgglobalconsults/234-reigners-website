@@ -44,12 +44,12 @@ const statistics = [
 
 export default function WhoWeAreSection() {
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <ScrollAnimationWrapper animation="fadeIn">
           <div className="mb-12 lg:mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-black">
               Who We <span className="text-green-600">Are.</span>
             </h2>
             <p className="text-lg text-gray-700">
@@ -74,7 +74,7 @@ export default function WhoWeAreSection() {
               {/* Play button overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <button
-                  className="w-20 h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+                  className="w-10 h-10 md:w-20 md:h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
                   aria-label="Play video"
                 >
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
