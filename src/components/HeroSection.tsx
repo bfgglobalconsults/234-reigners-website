@@ -32,8 +32,6 @@ export default function HeroSection() {
             <ScrollAnimationWrapper animation="fadeInLeft" delay={100}>
               {/* Headline */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-bold text-gray-900">
-
-             
                 Mental wellbeing through Intercultural Experience.
               </h1>
             </ScrollAnimationWrapper>
@@ -52,7 +50,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/experiences"
-                  className="inline-flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full transition font-medium"
+                  className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition font-medium"
                 >
                   Explore Experiences
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,10 +63,19 @@ export default function HeroSection() {
                   </svg>
                 </Link>
                 <Link
-                  href="/community"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-[#007835] hover:bg-[#007835] hover:text-white text-gray-900 px-6 py-3 rounded-full transition font-medium"
+                  href="https://www.youtube.com/@234Reigners"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-red-600 hover:bg-red-600 hover:text-white text-gray-900 px-6 py-3 rounded-full transition font-medium group"
                 >
-                  Join Our Community
+                  <svg
+                    className="w-5 h-5 text-red-600 group-hover:text-white transition-colors"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                  Find Us on Youtube
                 </Link>
               </div>
             </ScrollAnimationWrapper>
@@ -104,30 +111,38 @@ export default function HeroSection() {
             </ScrollAnimationWrapper>
           </div>
 
-          {/* Right Video with Image Mask */}
+          {/* Right Hero Image */}
           <ScrollAnimationWrapper animation="fadeInRight" delay={200}>
-            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[500px] overflow-hidden">
-              {/* Video element with mask */}
-              <video
-                src="/assets/mental-health.mp4"
-                className="absolute inset-0 w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-                style={
-                  {
-                    maskImage: 'url(/assets/reigners-banner.png)',
-                    maskSize: 'cover',
-                    maskPosition: 'center',
-                    maskRepeat: 'no-repeat',
-                    WebkitMaskImage: 'url(/assets/reigners-banner.png)',
-                    WebkitMaskSize: 'cover',
-                    WebkitMaskPosition: 'center',
-                    WebkitMaskRepeat: 'no-repeat',
-                  } as React.CSSProperties
-                }
+            <div className="relative w-full aspect-square lg:aspect-auto lg:h-[500px] overflow-hidden group">
+              <Image
+                src="/assets/hero-new-img.png"
+                alt="234reigners Hero"
+                fill
+                className="object-contain"
+                priority
               />
+              {/* YouTube Play Button Overlay */}
+              <Link
+                href="https://www.youtube.com/@234Reigners"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 flex items-center justify-center z-10 transition-opacity hover:opacity-90"
+              >
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 transition-transform group-hover:scale-110 duration-300">
+                  {/* Red Circle Background */}
+                  <div className="absolute inset-0 bg-red-600 rounded-full shadow-2xl"></div>
+                  {/* White Play Triangle */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 ml-1"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+              </Link>
             </div>
           </ScrollAnimationWrapper>
         </div>

@@ -43,31 +43,31 @@ export default function MentalHealthApproachSection() {
 
           {/* Right Video Card */}
           <ScrollAnimationWrapper animation="fadeInRight">
-            <div className="relative rounded-3xl p-4 sm:p-8 lg:p-12">
-                          <Image
-                            src="/assets/purple-bg.png"
-                            alt="Diverse group of people connecting"
-                            width={800}
-                            height={1000}
-                            className="w-full h-[400px] sm:h-[500px] lg:h-auto object-cover rounded-3xl"
-                            priority
-                          />
-                          {/* Play button overlay */}
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <button
-                              className="w-20 h-20 bg-yellow-500 hover:bg-yellow-600 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
-                              aria-label="Play video"
-                            >
-                              <svg
-                                className="w-8 h-8 text-white ml-1"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M8 5v14l11-7z" />
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
+            <div className="relative rounded-3xl p-4">
+              <Image
+                src="/assets/purple-bg.png"
+                alt="Diverse group of people connecting"
+                width={900}
+                height={1000}
+                className="w-full md:h-200 h-190 lg:h-auto object-cover rounded-3xl"
+                priority
+              />
+              {/* Play button overlay */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button
+                  className="w-20 h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+                  aria-label="Play video"
+                >
+                  <svg
+                    className="w-8 h-8 text-white ml-1"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </ScrollAnimationWrapper>
         </div>
       </div>
