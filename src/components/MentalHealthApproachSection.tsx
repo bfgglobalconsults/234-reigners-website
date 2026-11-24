@@ -8,7 +8,7 @@ export default function MentalHealthApproachSection() {
   return (
     <section className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           {/* Left Content */}
           <ScrollAnimationWrapper animation="fadeInLeft">
             <div>
@@ -41,15 +41,15 @@ export default function MentalHealthApproachSection() {
             </div>
           </ScrollAnimationWrapper>
 
-          {/* Right Video Card */}
+          {/* Right Video Card bg-[6E0EF0]*/}
           <ScrollAnimationWrapper animation="fadeInRight">
-            <div className="relative rounded-3xl p-4">
+            <div className="relative bg-[6E0EF0] rounded-3xl">
               <Image
                 src="/assets/purple-bg.png"
                 alt="Diverse group of people connecting"
-                width={900}
-                height={1000}
-                className="w-full md:h-200 h-190 lg:h-auto object-cover rounded-3xl"
+                width={800}
+                height={800}
+                className="w-full h-auto object-cover rounded-3xl"
                 priority
               />
               {/* Play button overlay */}
@@ -58,11 +58,7 @@ export default function MentalHealthApproachSection() {
                   className="w-20 h-20 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
                   aria-label="Play video"
                 >
-                  <svg
-                    className="w-8 h-8 text-white ml-1"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </button>
