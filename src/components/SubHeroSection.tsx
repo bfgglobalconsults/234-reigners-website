@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import { motion, PanInfo } from 'framer-motion'
 import ScrollAnimationWrapper from './ScrollAnimationWrapper'
 
 const services = [
@@ -109,6 +110,18 @@ export default function SubHeroSection() {
     setCurrentIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1))
   }
 
+  // Handle drag end
+  const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    const threshold = 50
+    if (info.offset.x < -threshold) {
+      // Swiped left - go to next
+      handleNext()
+    } else if (info.offset.x > threshold) {
+      // Swiped right - go to previous
+      handlePrev()
+    }
+  }
+
   // Get visible cards for desktop (4 cards at a time)
   const getVisibleCards = () => {
     const visibleCards = []
@@ -151,7 +164,15 @@ export default function SubHeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
         {/* Cards Grid/Carousel - Desktop */}
         <div className="hidden lg:block">
-          <div className="grid lg:grid-cols-4 gap-6">
+          <motion.div
+            className="grid lg:grid-cols-4 gap-6"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={handleDragEnd}
+            style={{ cursor: 'grab' }}
+            whileTap={{ cursor: 'grabbing' }}
+          >
             {getVisibleCards().map((service, index) => (
               <div
                 key={`${service.id}-${currentIndex}-${index}`}
@@ -193,7 +214,7 @@ export default function SubHeroSection() {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Desktop Navigation Arrows */}
           <div className="flex items-center justify-center gap-4 mt-8">
@@ -257,8 +278,19 @@ export default function SubHeroSection() {
         <div className="lg:hidden">
           <div className="relative">
             {/* Current Card */}
-            <div
+            <motion.div
               className={`${services[currentIndex].bgColor} rounded-2xl p-6 flex flex-col min-h-[500px]`}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={handleDragEnd}
+              style={{ cursor: 'grab' }}
+              whileTap={{ cursor: 'grabbing' }}
+              key={currentIndex}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.3 }}
             >
               {/* Card Header */}
               <div className="mb-4">
@@ -300,7 +332,7 @@ export default function SubHeroSection() {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </motion.div>
 
             {/* Navigation Arrows */}
             <div className="flex items-center justify-center gap-4 mt-8">
