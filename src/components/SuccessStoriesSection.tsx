@@ -15,8 +15,8 @@ const stories = [
   },
   {
     id: 2,
-    title: 'Finding Belonging, One Connection at a Time.',
-    author: 'Maleek Ibrahim',
+    title: 'From Isolation to Social Wellbeing through Community Events',
+    author: 'Usman Kaita',
     image: '/assets/second-man.jpg',
     link: '/stories/maleek-ibrahim-2',
   },
